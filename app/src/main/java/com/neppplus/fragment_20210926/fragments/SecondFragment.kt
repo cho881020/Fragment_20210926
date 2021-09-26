@@ -24,7 +24,10 @@ class SecondFragment : Fragment() {
 
         toastBtn.setOnClickListener {
 
-//            Toast.makeText(this, "프래그먼트에서 토스트", Toast.LENGTH_SHORT).show()
+//            코드 적는 곳 (this) : 부품
+//            토스트의 재료로 필요한것 : 화면 불러내려면?  requireContext()
+
+            Toast.makeText(requireContext(), "프래그먼트에서 토스트", Toast.LENGTH_SHORT).show()
 
         }
 
